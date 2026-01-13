@@ -28,7 +28,7 @@ class Solution {
         char aux = s.charAt(i);
 
         for(char c : t.toCharArray()){
-            System.out.println("c: "+c+ " aux:"+aux+ " i:"+i+" countFound: "+contFound);
+            //System.out.println("c: "+c+ " aux:"+aux+ " i:"+i+" countFound: "+contFound);
             if  (c == aux){
                 contFound+=1;
                 if ((s.length()-1) > i){ 
@@ -38,13 +38,11 @@ class Solution {
             }
         }
 
-        System.out.println("i: "+i+" aux: "+aux+ " s.length(): "+s.length()+" contFound: "+contFound);
-        if (contFound == (s.length())){
+        //System.out.println("i: "+i+" aux: "+aux+ " s.length(): "+s.length()+" contFound: "+contFound);
+        if (contFound == s.length()){
             return true;
         }
 
         return false;
-
-
     }
 }
